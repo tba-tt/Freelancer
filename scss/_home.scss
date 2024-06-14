@@ -1,0 +1,102 @@
+#main__home{
+    position: relative;
+
+    .border-bottom{
+        height: 3px;
+        width: 5rem;
+        background-color: $color-blue;
+        margin: .5rem auto;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // @extend .container;
+        @extend .my-2;
+
+
+        .items{
+            display: flex;
+            @extend .my-3;
+
+            .item{
+                @extend .my-1;
+                i{
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @extend .my-2;
+
+        .works{
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+            flex: 100%;
+            @extend .my-2;
+            width: 100%;
+
+            .work{
+                &-medium{
+                    flex: 25%;
+                    @extend .py-3;
+                    background-color: $color-medium;
+                }
+                &-light{
+                    flex: 25%;
+                    @extend .py-3;
+                    background-color: $color-light;
+                }
+            }
+
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .working_process{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @extend .my-2;
+
+        .steps{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @extend .my-4;
+
+            .step{
+                @extend .px-1;
+
+                i{
+                    color: white;
+                    margin: auto;
+                    padding: auto;
+                    @extend .bg-step;
+                
+                    h3{
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                        @extend .bg-step-h;
+                    }
+                }
+            }
+
+        }
+    }
+}

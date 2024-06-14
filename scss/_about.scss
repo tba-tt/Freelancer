@@ -1,0 +1,112 @@
+@import 'variables';
+
+#main__about{
+    z-index: 2;
+
+
+    .about-me{ 
+        top: 0;
+        @extend .my-3;
+        
+        .foto-text{
+            display: flex;
+            @extend .my-3;
+
+            .foto{
+                border: 1px solid rgb(233, 233, 233);
+                border-radius: 8px;
+                @extend .py-1;
+                @extend .px-1;
+                @extend .mx-1;
+
+                img{
+                    width: 30rem;
+                    height: 20rem;
+                    background-position: center;
+                    // background-size: cover;
+                    object-fit: cover;
+                }
+            }
+
+            .text{
+                border: 1px solid rgb(233, 233, 233);
+                border-radius: 8px;
+                @extend .py-1;
+                @extend .px-1;
+                @extend .mx-1;
+            }
+
+        }
+    }
+
+    .what{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-dark;
+        color: $color-light;
+        @extend .py-3;
+
+        .istatistik{
+            h3{
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5rem;
+                color: $color-light;
+            }                   
+            .progress{
+                overflow: hidden;
+                width: 100%;
+                height: 2.5rem;
+                border-radius: .6rem;
+                background-color: white;
+                @extend .my-1;
+            }
+        }
+    }
+        
+    
+
+    .companies{  
+        display: flex;
+
+        img{
+            width: 25%;
+            height: 10rem;
+            @extend .py-2;
+            @extend .px-2;
+        }
+    }
+
+    .references{ 
+        .box{
+            div{ 
+                @extend .py-1;
+                @extend .px-1;
+
+                p{
+                    border: 1px solid rgb(150, 150, 150);
+                    border-radius: 5px;
+                    @extend .py-1;
+                    @extend .px-1;
+                    text-align: left;
+                }
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    li{
+                        @extend .p-2;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
